@@ -33,6 +33,13 @@ public class Calc {
                 System.out.println("The sum is: " + sum);
                 yield sum;
             }
+
+            case "subtract" ->
+            {
+                double sub = firstNum - secondNum;
+                System.out.println("The sum is: " + sub);
+                yield sub;
+            }
             default ->
             {
                 System.out.println("Invalid operation");
