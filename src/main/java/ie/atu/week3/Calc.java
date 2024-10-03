@@ -40,6 +40,14 @@ public class Calc {
                 System.out.println("The sum is: " + sub);
                 yield sub;
             }
+
+            case "multiply" ->
+            {
+                double mul = firstNum * secondNum;
+                System.out.println("The product is: " + mul);
+                yield mul;
+            }
+
             default ->
             {
                 System.out.println("Invalid operation");
