@@ -21,7 +21,7 @@ public class Calc {
         double secondNum = scan1.nextDouble();
         System.out.println("You entered " + secondNum);
 
-        System.out.println("Enter an operation(add, subtract, multiply, divide): ");
+        System.out.println("Enter an operation (add, subtract, multiply, divide, exponential): ");
         String operation = scan1.next();
 
         boolean validOperation = true;
@@ -53,6 +53,13 @@ public class Calc {
                 double div = firstNum / secondNum;
                 System.out.println("The product is: " + div);
                 yield div;
+            }
+
+            case "exponent" ->
+            {
+                double exp = Math.pow(firstNum, secondNum);
+                System.out.println("The product is: " + exp);
+                yield exp;
             }
 
             default ->
