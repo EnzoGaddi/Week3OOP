@@ -48,6 +48,13 @@ public class Calc {
                 yield mul;
             }
 
+            case "divide" ->
+            {
+                double div = firstNum / secondNum;
+                System.out.println("The product is: " + div);
+                yield div;
+            }
+
             default ->
             {
                 System.out.println("Invalid operation");
